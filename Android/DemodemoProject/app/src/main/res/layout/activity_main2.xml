@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/mainlayoutforrecycleview"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_alignParentTop="true"
+    android:layout_alignParentStart="true">
+    <LinearLayout
+        android:layout_width="364dp"
+        android:layout_height="wrap_content"
+
+        android:weightSum="1">
+        <ImageView
+
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            />
+
+        <EditText
+            android:id="@+id/search_et"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edit"
+            android:cursorVisible="true"
+            android:drawableLeft="@drawable/searchicon"
+            android:drawablePadding="20dp"
+            android:hint="Search..."
+            android:padding="5dp"
+            android:layout_weight="1.53" />
+    </LinearLayout>
+
+
+
+    <android.support.v7.widget.RecyclerView
+
+        android:id="@+id/showdata_lv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </android.support.v7.widget.RecyclerView>
+
+</LinearLayout>
+
+
+</RelativeLayout>

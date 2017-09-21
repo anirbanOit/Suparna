@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <ScrollView
+        android:id="@+id/mainlayoutform"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+<LinearLayout
+    android:background="@drawable/border"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   >
+
+    <LinearLayout
+
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical"
+
+        android:weightSum="1">
+
+        <EditText
+            android:id="@+id/editTextFirstName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+
+            android:layout_marginTop="20dp"
+            android:background="@drawable/border"
+            android:drawableLeft="@drawable/icn_name"
+            android:ems="10"
+            android:hint="Enter Your First Name"
+            android:inputType="textPersonName"
+            android:padding="10dp"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/editTextLastName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+
+            android:layout_marginTop="20dp"
+            android:background="@drawable/border"
+            android:drawableLeft="@drawable/icn_name"
+            android:ems="10"
+            android:hint="Enter Your Last Name"
+            android:inputType="text"
+            android:padding="10dp"
+            android:selectAllOnFocus="false"
+            android:textSize="15sp" />
+
+
+        <LinearLayout
+            android:background="@drawable/border"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="1dp"
+            android:weightSum="1">
+
+            <TextView
+
+                android:id="@+id/textViewmMale"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="0.53"
+                android:background="@drawable/border2"
+                android:gravity="center_vertical"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:layout_marginRight="-7dp"
+                android:text="Male"
+
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/textViewmFemale"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="0.47"
+                android:background="@drawable/border2"
+                android:gravity="center_vertical"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:text="Female"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_dob"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="8dp"
+            android:text="DOB:"
+            android:textColor="#000000"
+            android:textSize="20dp" />
+
+        <LinearLayout
+            android:id="@+id/doblayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/border"
+            android:padding="4.5dp"
+            android:weightSum="1">
+
+            <TextView
+                android:id="@+id/dob_tv"
+                android:layout_width="232dp"
+                android:layout_height="match_parent"
+                android:hint="mm/dd/yyyy"
+                android:padding="4dp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/dropdown" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Dept:"
+            android:textColor="#000000"
+            android:textSize="20dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/spinnerui">
+
+            <Spinner
+                android:id="@+id/dept_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_below="@+id/dob_et"
+                android:layout_gravity="center"
+                android:paddingRight="10dp"
+                android:spinnerMode="dropdown">
+
+
+            </Spinner>
+        </LinearLayout>
+
+
+        <ImageView
+            android:id="@+id/image_iv"
+            android:layout_width="91dp"
+            android:layout_height="87dp"
+            android:layout_gravity="center"
+            android:foregroundGravity="center"
+            android:src="@drawable/defaultimge"
+            android:layout_weight="0.12" />
+
+        <Button
+            android:id="@+id/add"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/contact_image"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:background="@drawable/btn_border"
+            android:text="ADD"
+
+            android:textSize="20dp" />
+
+    </LinearLayout>
+
+    <Button
+        android:layout_marginTop="20dp"
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_gravity="center"
+        android:background="@drawable/btnpre_border"
+        android:text="Preview"
+        android:textSize="20dp" />
+
+
+</LinearLayout>
+    </ScrollView>
+</RelativeLayout>
